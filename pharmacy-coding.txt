@@ -1,0 +1,2514 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'imgcust.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_logic(object):
+    
+    def add(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=log()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def go(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_MainWindow()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(472, 498)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(380, 310, 47, 13))
+        self.label_2.setText("")
+        self.label_2.setObjectName("label_2")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(-30, -20, 511, 531))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("WhatsApp Image 2019-03-16 at 3.23.51 PM.jpeg"))
+        self.label.setObjectName("label")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(130, 20, 171, 81))
+        font = QtGui.QFont()
+        font.setPointSize(22)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.usertxtbox_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.usertxtbox_2.setGeometry(QtCore.QRect(120, 240, 231, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.usertxtbox_2.setFont(font)
+        self.usertxtbox_2.setStyleSheet(" border-radius: 5px;\n"
+"    background-color: rgba(170, 170, 170,0.4);")
+        self.usertxtbox_2.setText("")
+        self.usertxtbox_2.setEchoMode(QtWidgets.QLineEdit.Normal)
+        self.usertxtbox_2.setObjectName("usertxtbox_2")
+        self.passtxtbox_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.passtxtbox_2.setGeometry(QtCore.QRect(120, 330, 231, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.passtxtbox_2.setFont(font)
+        self.passtxtbox_2.setStyleSheet(" border-radius: 5px;\n"
+"    background-color: rgba(170, 170, 170,0.4);")
+        self.passtxtbox_2.setInputMethodHints(QtCore.Qt.ImhHiddenText|QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText|QtCore.Qt.ImhSensitiveData)
+        self.passtxtbox_2.setText("")
+        self.passtxtbox_2.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.passtxtbox_2.setObjectName("passtxtbox_2")
+        self.SignInBtn_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.SignInBtn_2.setGeometry(QtCore.QRect(180, 400, 91, 41))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.SignInBtn_2.setFont(font)
+        self.SignInBtn_2.setStyleSheet("#SignInBtn{\n"
+"background-color: rgb(0, 0, 255);\n"
+"border: 1px solid;\n"
+"border-color: rgb(115, 115, 115);\n"
+"border-radius: 5px;\n"
+"}\n"
+"#SignInBtn:hover{\n"
+"border-radius: 5px;\n"
+"selection-color: rgb(218, 255, 198);\n"
+"background-color:rgb(0, 0, 0);\n"
+"color:rgb(255, 255, 255);\n"
+"}")
+        self.SignInBtn_2.setDefault(True)
+        self.SignInBtn_2.setObjectName("SignInBtn_2")
+        self.SignInBtn_2.clicked.connect(self.login)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+    def login(self):
+        if self.usertxtbox_2.text()=='AFA' and self.passtxtbox_2.text()=='0333':
+            print("Done")
+            self.go()
+        else:
+            print("Try Again")
+            self.add()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Login "))
+        self.label_4.setText(_translate("MainWindow", "Login Here"))
+        self.usertxtbox_2.setPlaceholderText(_translate("MainWindow", "Username"))
+        self.passtxtbox_2.setPlaceholderText(_translate("MainWindow", "Password"))
+        self.SignInBtn_2.setText(_translate("MainWindow", "Sign in"))
+
+class log(object):
+    def ko(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_logic()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(358, 80)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-20, -10, 471, 161))
+        self.frame.setStyleSheet("background-color:rgb(170, 0, 0)")
+        self.frame.setFrameShape(QtWidgets.QFrame.Panel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(30, 30, 341, 31))
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(160, 60, 75, 23))
+        self.pushButton.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.pushButton.clicked.connect(self.ko)
+        self.pushButton.setCheckable(False)
+        self.pushButton.setDefault(False)
+        self.pushButton.setFlat(False)
+        self.pushButton.setObjectName("pushButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Try  Again"))
+        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; color:#ffffff;\">The password or username that you\'ve entered is incorrect. </span></p></body></html>"))
+        self.pushButton.setText(_translate("MainWindow", "OK"))
+
+
+
+        
+
+
+class Ui_MainWindow(object):
+    def n1(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_Window()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+        
+        
+    def n2(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_Win()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def n3(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_empForm()
+        self.ui.setupUi(self.window)
+        self.window.show()
+   
+
+
+    def n4(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=pur1()
+        self.ui.setupUi(self.window)
+        self.window.show()
+       
+    
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(979, 603)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 991, 621))
+        self.frame.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(90, 100, 801, 331))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("TOP.PNG"))
+        self.label.setObjectName("label")
+        self.groupBox = QtWidgets.QGroupBox(self.frame)
+        self.groupBox.setGeometry(QtCore.QRect(100, 470, 791, 51))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.clicked.connect(self.n3)
+        self.pushButton_2.setGeometry(QtCore.QRect(210, 10, 141, 31))
+        self.pushButton_2.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(168, 0, 168);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(360, 10, 121, 31))
+        self.pushButton_3.clicked.connect(self.n4)
+        self.pushButton_3.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(168, 0, 168);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_5 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_5.setGeometry(QtCore.QRect(660, 10, 121, 31))
+        
+        self.pushButton_5.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(168, 0, 168);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.setGeometry(QtCore.QRect(10, 10, 191, 31))
+        self.pushButton.clicked.connect(self.n1)
+        self.pushButton.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(168, 0, 168);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_4 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_4.setGeometry(QtCore.QRect(490, 10, 161, 31))
+        self.pushButton_4.clicked.connect(self.n2)
+        self.pushButton_4.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(168, 0, 168);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton_4.setObjectName("pushButton_4")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton_2.setText(_translate("Form", "EMPLOYEE"))
+        self.pushButton_3.setText(_translate("Form", "PURCHASE"))
+        self.pushButton_5.setText(_translate("Form", "ORDER"))
+        self.pushButton.setText(_translate("Form", "CUSTOMER DETAIL"))
+        self.pushButton_4.setText(_translate("Form", "INVENTORY"))
+
+
+
+class Ui_Window(object):
+    
+    def t1(self):
+        import sys
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_three()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def t2(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_rethree()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def t3(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_opthree()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+
+    
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(903, 581)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(-200, 0, 1101, 571))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("cys.PNG"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(0, 0, 921, 61))
+        self.label_2.setStyleSheet("font: 75 8pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 0, 0);\n"
+"font: 36pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        self.groupBox = QtWidgets.QGroupBox(Form)
+        self.groupBox.setGeometry(QtCore.QRect(9, 449, 871, 71))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        
+        self.pushButton.setGeometry(QtCore.QRect(30, 10, 271, 51))
+        self.pushButton.clicked.connect(self.t1)
+        self.pushButton.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 20pt \"MS Shell Dlg 2\";")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.clicked.connect(self.t2)
+        self.pushButton_3.setGeometry(QtCore.QRect(320, 10, 261, 51))
+        self.pushButton_3.setStyleSheet("font: 20pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(85, 170, 255);")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.clicked.connect(self.t3)
+        self.pushButton_2.setGeometry(QtCore.QRect(590, 10, 261, 51))
+        self.pushButton_2.setStyleSheet("font: 20pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(85, 170, 255);")
+        self.pushButton_2.setObjectName("pushButton_2")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">CUSTOMER FORM</span></p></body></html>"))
+        self.pushButton.setText(_translate("Form", "CUSTOMER DETAIL"))
+        self.pushButton_3.setText(_translate("Form", "CUSTOMER RETURN"))
+        self.pushButton_2.setText(_translate("Form", "CUSTOMER REPORT"))
+
+
+
+class Ui_three(object):
+    
+    def a1(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_detail()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def a2(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_dupdate()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def a3(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_ddelete()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def a4(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_tb()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(687, 579)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 701, 581))
+        self.frame.setStyleSheet("\n"
+"background-color: rgb(0, 0, 0);")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(10, 60, 691, 491))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("Capture 1.PNG"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(10, 10, 631, 51))
+        self.label_2.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(80, 420, 131, 41))
+        self.pushButton.clicked.connect(self.a1)
+        self.pushButton.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_2.setGeometry(QtCore.QRect(80, 480, 141, 51))
+        self.pushButton_2.clicked.connect(self.a2)
+        self.pushButton_2.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_3.setGeometry(QtCore.QRect(480, 430, 141, 41))
+        self.pushButton_3.clicked.connect(self.a3)
+        self.pushButton_3.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.show = QtWidgets.QPushButton(self.frame)
+        self.show.setGeometry(QtCore.QRect(490, 490, 141, 41))
+        self.show.clicked.connect(self.a4)
+        self.show.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.show.setObjectName("show")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffa500;\">CUSTOMER FORM</span></p></body></html>"))
+        self.pushButton.setText(_translate("Form", "ADD"))
+        self.pushButton_2.setText(_translate("Form", "UPDATE"))
+        self.pushButton_3.setText(_translate("Form", "DELETE"))
+        self.show.setText(_translate("Form", "SHOW"))
+
+class Ui_detail(object):
+    def z1(self):
+        
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        cursor.execute("CREATE TABLE IF NOT EXISTS del(id INT NOT NULL auto_increment PRIMARY KEY,FIRSTNAME VARCHAR (20) NOT NULL,lastname VARCHAR (20) NOT NULL,PhoneNumber int NOT NULL,EmailAddress VARCHAR (20) NOT NULL,gender VARCHAR (20) NOT NULL,age int not null,BillAmount int NOT NULL)")
+                
+        sql="INSERT INTO del(FIRSTNAME,lastname,PhoneNumber,EmailAddress,gender,age,BillAmount ) VALUES( '"+(self.c).text()+"','"+(self.d).text()+"','"+(self.e).text()+"','"+(self.f).text()+"','"+ (self.g).text() + "','"+ (self.i).text() + "','"+ (self.j).text() + "')"
+        try:
+            cursor.execute(sql)
+            db.commit()
+            print('done')
+        except:
+            db.rollback()
+        db.close()
+
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(802, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-40, -20, 1791, 1021))
+        self.frame.setStyleSheet("QFrame{\n"
+"background-color:rgb(255, 85, 127)\n"
+"}\n"
+"")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(80, 190, 81, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(80, 230, 91, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(220, 30, 461, 71))
+        self.label_3.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(80, 150, 71, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(80, 270, 71, 16))
+        self.label_5.setObjectName("label_5")
+        self.label_8 = QtWidgets.QLabel(self.frame)
+        self.label_8.setGeometry(QtCore.QRect(80, 310, 61, 16))
+        self.label_8.setObjectName("label_8")
+        self.c = QtWidgets.QLineEdit(self.frame)
+        self.c.setGeometry(QtCore.QRect(230, 150, 191, 20))
+        self.c.setObjectName("lineEdit")
+        self.d = QtWidgets.QLineEdit(self.frame)
+        self.d.setGeometry(QtCore.QRect(230, 180, 191, 20))
+        self.d.setObjectName("lineEdit_2")
+        self.e = QtWidgets.QLineEdit(self.frame)
+        self.e.setGeometry(QtCore.QRect(230, 220, 191, 20))
+        self.e.setObjectName("lineEdit_3")
+        self.f = QtWidgets.QLineEdit(self.frame)
+        self.f.setGeometry(QtCore.QRect(230, 260, 191, 20))
+        self.f.setObjectName("lineEdit_4")
+        self.g = QtWidgets.QLineEdit(self.frame)
+        self.g.setGeometry(QtCore.QRect(230, 300, 191, 20))
+        self.g.setObjectName("lineEdit_5")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(300, 470, 75, 23))
+        self.pushButton.clicked.connect(self.z1)
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(80, 350, 81, 16))
+        self.label_6.setObjectName("label_6")
+        self.i = QtWidgets.QLineEdit(self.frame)
+        self.i.setGeometry(QtCore.QRect(230, 340, 191, 20))
+        self.i.setObjectName("lineEdit_6")
+        self.label_7 = QtWidgets.QLabel(self.frame)
+        self.label_7.setGeometry(QtCore.QRect(80, 390, 81, 16))
+        self.label_7.setObjectName("label_7")
+        self.j = QtWidgets.QLineEdit(self.frame)
+        self.j.setGeometry(QtCore.QRect(230, 390, 191, 20))
+        self.j.setObjectName("lineEdit_7")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 802, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "LAST NAME"))
+        self.label_2.setText(_translate("MainWindow", "PHONE NUMBER"))
+        self.label_3.setText(_translate("MainWindow", "ADD FORM"))
+        self.label_4.setText(_translate("MainWindow", "FIRST NAME"))
+        self.label_5.setText(_translate("MainWindow", "EMAIL"))
+        self.label_8.setText(_translate("MainWindow", "GENDER"))
+        self.pushButton.setText(_translate("MainWindow", "SUBMIT"))
+        self.label_6.setText(_translate("MainWindow", "AGE"))
+        self.label_7.setText(_translate("MainWindow", "Bill Amount"))
+
+        
+class Ui_dupdate(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        MainWindow.setAutoFillBackground(True)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-50, -40, 861, 651))
+        self.frame.setStyleSheet("background-color:rgb(0, 236, 173)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.whereen = QtWidgets.QLineEdit(self.frame)
+        self.whereen.setGeometry(QtCore.QRect(190, 290, 141, 20))
+        self.whereen.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.whereen.setObjectName("whereen")
+        self.QWHERE = QtWidgets.QLabel(self.frame)
+        self.QWHERE.setGeometry(QtCore.QRect(70, 290, 101, 16))
+        self.QWHERE.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.QWHERE.setObjectName("QWHERE")
+        self.QSET = QtWidgets.QLabel(self.frame)
+        self.QSET.setGeometry(QtCore.QRect(380, 290, 51, 16))
+        self.QSET.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";")
+        self.QSET.setObjectName("QSET")
+        self.seten = QtWidgets.QLineEdit(self.frame)
+        self.seten.setGeometry(QtCore.QRect(460, 290, 161, 20))
+        self.seten.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.seten.setObjectName("seten")
+        self.setcom = QtWidgets.QComboBox(self.frame)
+        self.setcom.setEnabled(True)
+        self.setcom.setGeometry(QtCore.QRect(460, 210, 181, 22))
+        self.setcom.setTabletTracking(False)
+        self.setcom.setAcceptDrops(False)
+        self.setcom.setAccessibleName("")
+        self.setcom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.setcom.setDuplicatesEnabled(False)
+        self.setcom.setObjectName("setcom")
+        list=['FIRSTNAME','lastname','PhoneNumber','EmailAddress','gender','age','BillAmount']
+        for i in list:
+            self.setcom.addItem(i)
+        self.wherecom = QtWidgets.QComboBox(self.frame)
+        self.wherecom.setGeometry(QtCore.QRect(190, 210, 151, 22))
+        self.wherecom.setAutoFillBackground(False)
+        self.wherecom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.wherecom.setEditable(False)
+        self.wherecom.setDuplicatesEnabled(False)
+        self.wherecom.setObjectName("wherecom")
+        list1=['FIRSTNAME','lastname','PhoneNumber','EmailAddress','gender','age','BillAmount']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.QHEAD = QtWidgets.QLabel(self.frame)
+        self.QHEAD.setGeometry(QtCore.QRect(240, 90, 331, 51))
+        self.QHEAD.setAccessibleName("")
+        self.QHEAD.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.QHEAD.setObjectName("QHEAD")
+        self.upbut = QtWidgets.QPushButton(self.frame)
+        self.upbut.setGeometry(QtCore.QRect(330, 430, 111, 31))
+        self.upbut.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.upbut.setObjectName("upbut")
+        self.upbut.clicked.connect(self.update)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def update(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.setcom.currentText()
+        wherebx=self.wherecom.currentText()
+        seten=self.seten.text()
+        when=self.whereen.text()
+        sql="update del set %s='%s' where %s='%s'"%(setbx,seten,wherebx,when)
+        
+        #try:
+        cursor.execute(sql)
+        db.commit()
+        print('done')
+        #except:
+        #    db.rollback()
+        #    print('errrr')
+        #db.close()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setAccessibleName(_translate("MainWindow", "first name"))
+        self.QWHERE.setText(_translate("MainWindow", "WHERE"))
+        self.QSET.setText(_translate("MainWindow", "SET"))
+        self.wherecom.setAccessibleName(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">first name</span></p></body></html>"))
+        self.wherecom.setProperty("edit combo", _translate("MainWindow", "FIRST NAME"))
+        self.QHEAD.setText(_translate("MainWindow", "UPDATE FORM"))
+        self.upbut.setText(_translate("MainWindow", "update"))
+
+        
+
+
+class Ui_ddelete(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-200, -60, 1401, 771))
+        self.frame.setStyleSheet("background-color:rgb(189, 189, 0)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(390, 130, 241, 31))
+        self.label_2.setStyleSheet("font: 24pt \"MS Shell Dlg 2\";\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        
+        
+        
+        self.comboBox = QtWidgets.QComboBox(self.frame)
+        self.comboBox.setGeometry(QtCore.QRect(350, 240, 201, 31))
+        self.comboBox.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        list=['FIRSTNAME','lastname','PhoneNumber','EmailAddress','gender','age','BillAmount']
+        for i in list:
+            self.comboBox.addItem(i)
+        
+        self.lineEdit = QtWidgets.QLineEdit(self.frame)
+        self.lineEdit.setGeometry(QtCore.QRect(350, 300, 211, 20))
+        self.lineEdit.setStyleSheet("QLineEdit{background-color:rgb(255, 255, 255)}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(250, 300, 91, 16))
+        self.label.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 12pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(440, 440, 91, 31))
+        
+        self.pushButton.clicked.connect(self.delete)
+        
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def delete(self):
+        import MySQLdb
+        
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.comboBox.currentText()
+        seten=self.lineEdit.text()
+        qu="DELETE FROM del where %s='%s'"%(setbx,seten)
+        try:
+            cursor.execute(qu)
+            db.commit()
+            print('done Delete')
+        except:
+            db.rollback()
+            print('ErroR in Delete')
+        db.close()
+        
+        
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setAccessibleName(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:22pt; font-weight:600; text-decoration: underline;\">DELETE FORM</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "DELETE FORM"))
+        self.label.setText(_translate("MainWindow", "WHERE"))
+        self.pushButton.setText(_translate("MainWindow", "DELETE"))
+
+
+        
+import MySQLdb
+class Ui_tb(object):
+    def __init__(self):
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, MainWindow):
+        
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(672, 438)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(0, 0, 671, 401))
+        self.tableWidget.setRowCount(14)
+        self.tableWidget.setColumnCount(14)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        self.crr.execute("select * from del")
+        res = self.crr.fetchall()
+        self.tableWidget.setRowCount(0)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number,column_number,QtWidgets.QTableWidgetItem(str(data)))
+
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 672, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "id"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "first name"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "last name"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "bill amount"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "email"))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "gender"))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "AGE"))
+class Ui_opthree(object):
+    def __init__(self):
+        import MySQLdb
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(755, 606)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 781, 621))
+        self.frame.setStyleSheet("#frame{\n"
+"background-color: rgb(255, 255, 255);}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(540, 230, 211, 301))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("rep.PNG"))
+        self.label.setObjectName("label")
+        self.tableWidget = QtWidgets.QTableWidget(self.frame)
+        self.tableWidget.setGeometry(QtCore.QRect(20, 190, 491, 401))
+        self.tableWidget.setStyleSheet("")
+        self.tableWidget.setProperty("showDropIndicator", True)
+        self.tableWidget.setRowCount(77)
+        self.tableWidget.setColumnCount(77)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.selectcom = QtWidgets.QComboBox(self.frame)
+        self.selectcom.setGeometry(QtCore.QRect(120, 90, 171, 22))
+        self.selectcom.setObjectName("selectcom")
+        list=['*','FIRSTNAME','lastname','PhoneNumber','EmailAddress','gender','age','BillAmount']
+        for i in list:
+            self.selectcom.addItem(i)
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(50, 90, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.clicked.connect(self.search)
+        self.pushButton.setGeometry(QtCore.QRect(160, 140, 75, 31))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("background-color: rgb(170, 170, 255);")
+        self.pushButton.setObjectName("pushButton")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(330, 90, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.wherecom = QtWidgets.QComboBox(self.frame)
+        self.wherecom.setGeometry(QtCore.QRect(410, 90, 151, 22))
+        self.wherecom.setObjectName("wherecom")
+        list1=['FIRSTNAME','lastname','PhoneNumber','EmailAddress','gender','age','BillAmount']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.whereen = QtWidgets.QLineEdit(self.frame)
+        self.whereen.setGeometry(QtCore.QRect(410, 130, 151, 20))
+        self.whereen.setObjectName("whereen")
+        
+        self.line = QtWidgets.QFrame(self.frame)
+        self.line.setGeometry(QtCore.QRect(10, 180, 591, 16))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(-10, -1, 771, 61))
+        self.label_4.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_4.setObjectName("label_4")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        item = self.tableWidget.verticalHeaderItem(0)
+        item.setText(_translate("Form", "1"))
+        self.label_2.setText(_translate("Form", "Select"))
+        self.pushButton.setText(_translate("Form", "Search"))
+        self.label_3.setText(_translate("Form", "Where"))
+        self.label_4.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">CUSTOMER REPORT</span></p></body></html>"))
+
+
+        
+    def search(self):
+        where_en = self.whereen.text()
+        where_com = self.wherecom.currentText()
+        sel_com = self.selectcom.currentText()
+        
+        if sel_com == "*":
+            sql = "select * from del where %s = '%s'"%(where_com,where_en)
+        else:
+            sql = "select %s from del where %s = '%s'"%(sel_com,where_com,where_en)
+        
+        
+        self.crr.execute(sql)
+        res = self.crr.fetchall()
+        print(res)
+        self.tableWidget.setRowCount(1)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number+1)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number+1,column_number,QtWidgets.QTableWidgetItem(str(data)))
+
+    
+        
+        
+        
+class Ui_rethree(object):
+    def b1(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_redetail()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def b2(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_reupdate()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def b3(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_redelete()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def b4(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_retb()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(766, 601)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 781, 591))
+        self.frame.setStyleSheet("background-color: rgb(88, 88, 131);")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-250, -30, 1091, 581))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("repo.PNG"))
+        self.label.setObjectName("label")
+        self.groupBox = QtWidgets.QGroupBox(self.frame)
+        self.groupBox.setGeometry(QtCore.QRect(80, 510, 611, 71))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.clicked.connect(self.b1)
+        self.pushButton.setGeometry(QtCore.QRect(10, 10, 141, 51))
+        self.pushButton.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.clicked.connect(self.b2)
+        self.pushButton_2.setGeometry(QtCore.QRect(160, 10, 141, 51))
+        self.pushButton_2.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(310, 10, 141, 51))
+        self.pushButton_3.clicked.connect(self.b3)
+        self.pushButton_3.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.show = QtWidgets.QPushButton(self.groupBox)
+        self.show.setGeometry(QtCore.QRect(460, 10, 141, 51))
+        self.show.clicked.connect(self.b4)
+        self.show.setStyleSheet("color:white;\n"
+"font-size: 28pt \"MS Shell Dlg 2\";\n"
+"border-color:darkblue;\n"
+"background-color:transparent;\n"
+"background:black;")
+        self.show.setObjectName("show")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton.setText(_translate("Form", "ADD"))
+        self.pushButton_2.setText(_translate("Form", "UPDATE"))
+        self.pushButton_3.setText(_translate("Form", "DELETE"))
+        self.show.setText(_translate("Form", "SHOW"))
+
+
+
+class Ui_redetail(object):
+    def k1(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+       
+        cursor.execute("CREATE TABLE IF NOT EXISTS ret(id INT NOT NULL auto_increment PRIMARY KEY,MONTHLYBILL int not null,PRODUCTNAME varchar(20) not null,PRODUCTQUANTITY int not null,PRODUCTPRICE int not null,BillAmount int not null)")
+        sql="INSERT INTO ret(MONTHLYBILL,PRODUCTNAME,PRODUCTQUANTITY,PRODUCTPRICE,BillAmount) VALUES('"+(self.c).text()+"','"+(self.d).text()+"','"+(self.e).text()+"','"+(self.f).text()+"','"+ (self.g).text() + "')"       
+
+        try:
+            cursor.execute(sql)
+            db.commit()
+            print('done submit')
+        except:
+            db.rollback()
+        db.close()
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(741, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(0, -20, 1371, 591))
+        self.frame.setStyleSheet("QFrame{\n"
+"background-color:rgb(252, 0, 189)\n"
+"}\n"
+"")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(80, 190, 81, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(80, 230, 131, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(220, 30, 461, 71))
+        self.label_3.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(80, 150, 71, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(80, 270, 101, 16))
+        self.label_5.setObjectName("label_5")
+        self.c = QtWidgets.QLineEdit(self.frame)
+        self.c.setGeometry(QtCore.QRect(230, 150, 191, 20))
+        self.c.setObjectName("lineEdit")
+        self.d = QtWidgets.QLineEdit(self.frame)
+        self.d.setGeometry(QtCore.QRect(230, 180, 191, 20))
+        self.d.setObjectName("lineEdit_2")
+        self.e = QtWidgets.QLineEdit(self.frame)
+        self.e.setGeometry(QtCore.QRect(230, 220, 191, 20))
+        self.e.setObjectName("lineEdit_3")
+        self.f= QtWidgets.QLineEdit(self.frame)
+        self.f.setGeometry(QtCore.QRect(230, 260, 191, 20))
+        self.f.setObjectName("lineEdit_4")
+        self.g = QtWidgets.QLineEdit(self.frame)
+        self.g.setGeometry(QtCore.QRect(230, 300, 191, 20))
+        self.g.setObjectName("lineEdit_5")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(300, 470, 75, 23))
+        self.pushButton.clicked.connect(self.k1)
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(80, 310, 131, 16))
+        self.label_6.setObjectName("label_6")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 741, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "PRODUCT NAME"))
+        self.label_2.setText(_translate("MainWindow", "PRODUCT QUANTITY"))
+        self.label_3.setText(_translate("MainWindow", "ADD FORM"))
+        self.label_4.setText(_translate("MainWindow", "MONTHLY BILL"))
+        self.label_5.setText(_translate("MainWindow", "PRODUCT PRICE"))
+        self.pushButton.setText(_translate("MainWindow", "SUBMIT"))
+        self.label_6.setText(_translate("MainWindow", "Bill Amount"))
+
+class Ui_reupdate(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        MainWindow.setAutoFillBackground(True)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-50, -40, 861, 651))
+        self.frame.setStyleSheet("background-color:rgb(0, 236, 173)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.whereen = QtWidgets.QLineEdit(self.frame)
+        self.whereen.setGeometry(QtCore.QRect(190, 290, 141, 20))
+        self.whereen.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.whereen.setObjectName("whereen")
+        self.QWHERE = QtWidgets.QLabel(self.frame)
+        self.QWHERE.setGeometry(QtCore.QRect(70, 290, 101, 16))
+        self.QWHERE.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.QWHERE.setObjectName("QWHERE")
+        self.QSET = QtWidgets.QLabel(self.frame)
+        self.QSET.setGeometry(QtCore.QRect(380, 290, 51, 16))
+        self.QSET.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";")
+        self.QSET.setObjectName("QSET")
+        self.seten = QtWidgets.QLineEdit(self.frame)
+        self.seten.setGeometry(QtCore.QRect(460, 290, 161, 20))
+        self.seten.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.seten.setObjectName("seten")
+        self.setcom = QtWidgets.QComboBox(self.frame)
+        self.setcom.setEnabled(True)
+        self.setcom.setGeometry(QtCore.QRect(460, 210, 181, 22))
+        self.setcom.setTabletTracking(False)
+        self.setcom.setAcceptDrops(False)
+        self.setcom.setAccessibleName("")
+        self.setcom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.setcom.setDuplicatesEnabled(False)
+        self.setcom.setObjectName("setcom")
+        list=['MONTHLYBILL','PRODUCTNAME','PRODUCTQUANTITY','PRODUCTPRICE','BillAmount']
+        for i in list:
+            self.setcom.addItem(i)
+        self.wherecom = QtWidgets.QComboBox(self.frame)
+        self.wherecom.setGeometry(QtCore.QRect(190, 210, 151, 22))
+        self.wherecom.setAutoFillBackground(False)
+        self.wherecom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.wherecom.setEditable(False)
+        self.wherecom.setDuplicatesEnabled(False)
+        self.wherecom.setObjectName("wherecom")
+        list1=['MONTHLYBILL','PRODUCTNAME','PRODUCTQUANTITY','PRODUCTPRICE','BillAmount']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.QHEAD = QtWidgets.QLabel(self.frame)
+        self.QHEAD.setGeometry(QtCore.QRect(240, 90, 331, 51))
+        self.QHEAD.setAccessibleName("")
+        self.QHEAD.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.QHEAD.setObjectName("QHEAD")
+        self.upbut = QtWidgets.QPushButton(self.frame)
+        self.upbut.setGeometry(QtCore.QRect(330, 430, 111, 31))
+        self.upbut.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.upbut.setObjectName("upbut")
+        self.upbut.clicked.connect(self.update)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def update(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.setcom.currentText()
+        wherebx=self.wherecom.currentText()
+        seten=self.seten.text()
+        when=self.whereen.text()
+        sql="update ret set %s='%s' where %s='%s'"%(setbx,seten,wherebx,when)
+        
+        #try:
+        cursor.execute(sql)
+        db.commit()
+        print('done')
+        #except:
+        #    db.rollback()
+        #    print('errrr')
+        #db.close()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setAccessibleName(_translate("MainWindow", "first name"))
+        self.QWHERE.setText(_translate("MainWindow", "WHERE"))
+        self.QSET.setText(_translate("MainWindow", "SET"))
+        self.wherecom.setAccessibleName(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">first name</span></p></body></html>"))
+        self.wherecom.setProperty("edit combo", _translate("MainWindow", "FIRST NAME"))
+        self.QHEAD.setText(_translate("MainWindow", "UPDATE FORM"))
+        self.upbut.setText(_translate("MainWindow", "update"))
+
+        
+        
+class Ui_redelete(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-200, -60, 1401, 771))
+        self.frame.setStyleSheet("background-color:rgb(189, 189, 0)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(390, 130, 241, 31))
+        self.label_2.setStyleSheet("font: 24pt \"MS Shell Dlg 2\";\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        
+        
+        
+        self.comboBox = QtWidgets.QComboBox(self.frame)
+        self.comboBox.setGeometry(QtCore.QRect(350, 240, 201, 31))
+        self.comboBox.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        list=['MONTHLYBILL','PRODUCTNAME','PRODUCTQUANTITY','PRODUCTPRICE','BillAmount']
+        for i in list:
+            self.comboBox.addItem(i)
+        
+        self.lineEdit = QtWidgets.QLineEdit(self.frame)
+        self.lineEdit.setGeometry(QtCore.QRect(350, 300, 211, 20))
+        self.lineEdit.setStyleSheet("QLineEdit{background-color:rgb(255, 255, 255)}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(250, 300, 91, 16))
+        self.label.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 12pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(440, 440, 91, 31))
+        
+        self.pushButton.clicked.connect(self.delete)
+        
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def delete(self):
+        import MySQLdb
+        
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.comboBox.currentText()
+        seten=self.lineEdit.text()
+        qu="DELETE FROM ret where %s='%s'"%(setbx,seten)
+        try:
+            cursor.execute(qu)
+            db.commit()
+            print('done Delete')
+        except:
+            db.rollback()
+            print('ErroR in Delete')
+        db.close()
+        
+        
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setAccessibleName(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:22pt; font-weight:600; text-decoration: underline;\">DELETE FORM</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "DELETE FORM"))
+        self.label.setText(_translate("MainWindow", "WHERE"))
+        self.pushButton.setText(_translate("MainWindow", "DELETE"))
+
+
+import MySQLdb
+class Ui_retb(object):
+    def __init__(self):
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, MainWindow):
+        
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(672, 438)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(0, 0, 671, 401))
+        self.tableWidget.setRowCount(14)
+        self.tableWidget.setColumnCount(14)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        self.crr.execute("select * from ret")
+        res = self.crr.fetchall()
+        self.tableWidget.setRowCount(0)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number,column_number,QtWidgets.QTableWidgetItem(str(data)))
+
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 672, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "MONTHLY BILL"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "PRODUCT NAME"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "PRODUCT QUANTITY"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "PRODUCT PRICE"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "ID"))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "BILL AMOUNT"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", " "))
+
+        
+class Ui_Win(object):
+    def __init__(self):
+        import MySQLdb
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(755, 606)
+        self.frame = QtWidgets.QFrame(Form)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 781, 621))
+        self.frame.setStyleSheet("#frame{\n"
+"background-color: rgb(255, 255, 255);}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(450, 190, 311, 421))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("inven.PNG"))
+        self.label.setObjectName("label")
+        self.tableWidget = QtWidgets.QTableWidget(self.frame)
+        self.tableWidget.setGeometry(QtCore.QRect(20, 190, 491, 401))
+        self.tableWidget.setStyleSheet("")
+        self.tableWidget.setProperty("showDropIndicator", True)
+        self.tableWidget.setRowCount(77)
+        self.tableWidget.setColumnCount(77)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.selectcom = QtWidgets.QComboBox(self.frame)
+        self.selectcom.setGeometry(QtCore.QRect(120, 90, 171, 22))
+        self.selectcom.setObjectName("selectcom")
+        list=['All','purchase_ID','Company_Name','Product_Name','Quantity','Date','Total_Amount']
+        for i in list:
+            self.selectcom.addItem(i)
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(50, 90, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(160, 140, 75, 31))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("background-color: rgb(170, 170, 255);")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.l0)
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(330, 90, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.wherecom = QtWidgets.QComboBox(self.frame)
+        self.wherecom.setGeometry(QtCore.QRect(410, 90, 151, 22))
+        self.wherecom.setObjectName("wherecom")
+        list1=['purchase_ID','Company_Name','Product_Name','Quantity','Date','Total_Amount']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.whereen = QtWidgets.QLineEdit(self.frame)
+        self.whereen.setGeometry(QtCore.QRect(410, 130, 151, 20))
+        self.whereen.setObjectName("whereen")
+        self.line = QtWidgets.QFrame(self.frame)
+        self.line.setGeometry(QtCore.QRect(10, 180, 591, 16))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(0, -1, 791, 61))
+        self.label_4.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_4.setObjectName("label_4")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        item = self.tableWidget.verticalHeaderItem(0)
+        item.setText(_translate("Form", "1"))
+        self.label_2.setText(_translate("Form", "Select"))
+        self.pushButton.setText(_translate("Form", "Search"))
+        self.label_3.setText(_translate("Form", "Where"))
+        self.label_4.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">INVENTORY</span></p></body></html>"))
+
+        
+        
+    def l0(self):
+        where_en = self.whereen.text()
+        where_com = self.wherecom.currentText()
+        sel_com = self.selectcom.currentText()
+        
+        if sel_com == "All":
+            sql = "select * from purchase where %s = '%s'"%(where_com,where_en)
+        else:
+            sql = "select %s from purchase where %s = '%s'"%(sel_com,where_com,where_en)
+        
+        
+        self.crr.execute(sql)
+        res = self.crr.fetchall()
+        self.tableWidget.setRowCount(0)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number,column_number,QtWidgets.QTableWidgetItem(str(data)))
+        
+        
+class Ui_empForm(object):
+    def c1(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_empdetail()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def c2(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_empupdate()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def c3(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_empdelete()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+    def c4(self):
+        
+        self.window=QtWidgets.QMainWindow()
+        self.ui=Ui_emptb()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        
+        
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(812, 590)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(-110, 10, 921, 591))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("employe.PNG"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(-10, -1, 831, 61))
+        self.label_2.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        self.groupBox = QtWidgets.QGroupBox(Form)
+        self.groupBox.setGeometry(QtCore.QRect(250, 520, 441, 51))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.clicked.connect(self.c1)
+        self.pushButton.setGeometry(QtCore.QRect(20, 10, 91, 31))
+        self.pushButton.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.clicked.connect(self.c2)
+        self.pushButton_2.setGeometry(QtCore.QRect(130, 10, 91, 31))
+        self.pushButton_2.setStyleSheet("background-color: rgb(85, 170, 255);\n"
+"font: 14pt \"MS Shell Dlg 2\";")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.clicked.connect(self.c3)
+        self.pushButton_3.setGeometry(QtCore.QRect(250, 10, 91, 31))
+        self.pushButton_3.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"\n"
+"background-color: rgb(85, 170, 255);")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_4.setGeometry(QtCore.QRect(360, 10, 75, 31))
+        self.pushButton_4.clicked.connect(self.c4)
+        self.pushButton_4.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(85, 170, 255);")
+        self.pushButton_4.setObjectName("pushButton_4")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label_2.setText(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">EMPLOYEE FORM</span></p></body></html>"))
+        self.pushButton.setText(_translate("Form", "ADD"))
+        self.pushButton_2.setText(_translate("Form", "UPDATE"))
+        self.pushButton_3.setText(_translate("Form", "DELETE"))
+        self.pushButton_4.setText(_translate("Form", "SHOW"))
+
+
+class Ui_empdetail(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-40, -10, 1811, 1021))
+        self.frame.setStyleSheet("QFrame{\n"
+"background-color:rgb(160, 160, 238)\n"
+"}\n"
+"")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(80, 190, 81, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(80, 230, 131, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(220, 30, 461, 71))
+        self.label_3.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(80, 150, 71, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(80, 270, 101, 16))
+        self.label_5.setObjectName("label_5")
+        self.c = QtWidgets.QLineEdit(self.frame)
+        self.c.setGeometry(QtCore.QRect(230, 150, 191, 20))
+        self.c.setObjectName("lineEdit")
+        self.d = QtWidgets.QLineEdit(self.frame)
+        self.d.setGeometry(QtCore.QRect(230, 180, 191, 20))
+        self.d.setObjectName("lineEdit_2")
+        self.e = QtWidgets.QLineEdit(self.frame)
+        self.e.setGeometry(QtCore.QRect(230, 220, 191, 20))
+        self.e.setObjectName("lineEdit_3")
+        self.f = QtWidgets.QLineEdit(self.frame)
+        self.f.setGeometry(QtCore.QRect(230, 260, 191, 20))
+        self.f.setObjectName("lineEdit_4")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(300, 470, 75, 23))
+        self.pushButton.clicked.connect(self.p1)
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(80, 310, 47, 13))
+        self.label_6.setObjectName("label_6")
+        self.g = QtWidgets.QLineEdit(self.frame)
+        self.g.setGeometry(QtCore.QRect(230, 300, 191, 20))
+        self.g.setObjectName("lineEdit_5")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "ADDRESS"))
+        self.label_2.setText(_translate("MainWindow", "SALARY"))
+        self.label_3.setText(_translate("MainWindow", "ADD FORM"))
+        self.label_4.setText(_translate("MainWindow", "NAME"))
+        self.label_5.setText(_translate("MainWindow", "PHONE NUMBER"))
+        self.pushButton.setText(_translate("MainWindow", "SUBMIT"))
+        self.label_6.setText(_translate("MainWindow", "GENDER"))
+
+
+        
+    def p1(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+       
+        cursor.execute("CREATE TABLE IF NOT EXISTS emp(id INT NOT NULL auto_increment PRIMARY KEY,name varchar(20) not null,address varchar(20) not null,salary int not null,phonenumber int not null,gender varchar(20) not null)")
+        sql="INSERT INTO emp(name,address,salary,phonenumber,gender) VALUES('"+(self.c).text()+"','"+(self.d).text()+"','"+(self.e).text()+"','"+(self.f).text()+"','"+ (self.g).text() + "')"       
+
+        try:
+            cursor.execute(sql)
+            db.commit()
+            print('done submit')
+        except:
+            db.rollback()
+        db.close()
+        
+        
+class Ui_empupdate(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        MainWindow.setAutoFillBackground(True)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-50, -40, 861, 651))
+        self.frame.setStyleSheet("background-color:rgb(0, 236, 173)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.whereen = QtWidgets.QLineEdit(self.frame)
+        self.whereen.setGeometry(QtCore.QRect(190, 290, 141, 20))
+        self.whereen.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.whereen.setObjectName("whereen")
+        self.QWHERE = QtWidgets.QLabel(self.frame)
+        self.QWHERE.setGeometry(QtCore.QRect(70, 290, 101, 16))
+        self.QWHERE.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";")
+        self.QWHERE.setObjectName("QWHERE")
+        self.QSET = QtWidgets.QLabel(self.frame)
+        self.QSET.setGeometry(QtCore.QRect(380, 290, 51, 16))
+        self.QSET.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";")
+        self.QSET.setObjectName("QSET")
+        self.seten = QtWidgets.QLineEdit(self.frame)
+        self.seten.setGeometry(QtCore.QRect(460, 290, 161, 20))
+        self.seten.setStyleSheet("background-color:rgb(255, 255, 255)")
+        self.seten.setObjectName("seten")
+        self.setcom = QtWidgets.QComboBox(self.frame)
+        self.setcom.setEnabled(True)
+        self.setcom.setGeometry(QtCore.QRect(460, 210, 181, 22))
+        self.setcom.setTabletTracking(False)
+        self.setcom.setAcceptDrops(False)
+        self.setcom.setAccessibleName("")
+        self.setcom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.setcom.setDuplicatesEnabled(False)
+        self.setcom.setObjectName("setcom")
+        list=['name','address','salary','phonenumber','gender']
+        for i in list:
+            self.setcom.addItem(i)
+        self.wherecom = QtWidgets.QComboBox(self.frame)
+        self.wherecom.setGeometry(QtCore.QRect(190, 210, 151, 22))
+        self.wherecom.setAutoFillBackground(False)
+        self.wherecom.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";")
+        self.wherecom.setEditable(False)
+        self.wherecom.setDuplicatesEnabled(False)
+        self.wherecom.setObjectName("wherecom")
+        list1=['name','address','salary','phonenumber','gender']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.QHEAD = QtWidgets.QLabel(self.frame)
+        self.QHEAD.setGeometry(QtCore.QRect(240, 90, 331, 51))
+        self.QHEAD.setAccessibleName("")
+        self.QHEAD.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";")
+        self.QHEAD.setObjectName("QHEAD")
+        self.upbut = QtWidgets.QPushButton(self.frame)
+        self.upbut.setGeometry(QtCore.QRect(330, 430, 111, 31))
+        self.upbut.setStyleSheet("QPushButton{\n"
+"background-color:rgb(170, 170, 255)}")
+        self.upbut.setObjectName("upbut")
+        self.upbut.clicked.connect(self.update)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def update(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.setcom.currentText()
+        wherebx=self.wherecom.currentText()
+        seten=self.seten.text()
+        when=self.whereen.text()
+        sql="update emp set %s='%s' where %s='%s'"%(setbx,seten,wherebx,when)
+        
+        #try:
+        cursor.execute(sql)
+        db.commit()
+        print('done')
+        #except:
+        #    db.rollback()
+        #    print('errrr')
+        #db.close()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setAccessibleName(_translate("MainWindow", "first name"))
+        self.QWHERE.setText(_translate("MainWindow", "WHERE"))
+        self.QSET.setText(_translate("MainWindow", "SET"))
+        self.wherecom.setAccessibleName(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">first name</span></p></body></html>"))
+        self.wherecom.setProperty("edit combo", _translate("MainWindow", "FIRST NAME"))
+        self.QHEAD.setText(_translate("MainWindow", "UPDATE FORM"))
+        self.upbut.setText(_translate("MainWindow", "update"))
+
+        
+        
+class Ui_empdelete(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-200, -60, 1401, 771))
+        self.frame.setStyleSheet("background-color:rgb(189, 189, 0)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(390, 130, 241, 31))
+        self.label_2.setStyleSheet("font: 24pt \"MS Shell Dlg 2\";\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        
+        
+        
+        self.comboBox = QtWidgets.QComboBox(self.frame)
+        self.comboBox.setGeometry(QtCore.QRect(350, 240, 201, 31))
+        self.comboBox.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        list=['name','address','salary','phonenumber','gender']
+        for i in list:
+            self.comboBox.addItem(i)
+        
+        self.lineEdit = QtWidgets.QLineEdit(self.frame)
+        self.lineEdit.setGeometry(QtCore.QRect(350, 300, 211, 20))
+        self.lineEdit.setStyleSheet("QLineEdit{background-color:rgb(255, 255, 255)}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(250, 300, 91, 16))
+        self.label.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 12pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(440, 440, 91, 31))
+        
+        self.pushButton.clicked.connect(self.delete)
+        
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def delete(self):
+        import MySQLdb
+        
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.comboBox.currentText()
+        seten=self.lineEdit.text()
+        qu="DELETE FROM emp where %s='%s'"%(setbx,seten)
+        try:
+            cursor.execute(qu)
+            db.commit()
+            print('done Delete')
+        except:
+            db.rollback()
+            print('ErroR in Delete')
+        db.close()
+        
+        
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setAccessibleName(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:22pt; font-weight:600; text-decoration: underline;\">DELETE FORM</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "DELETE FORM"))
+        self.label.setText(_translate("MainWindow", "WHERE"))
+        self.pushButton.setText(_translate("MainWindow", "DELETE"))
+
+
+import MySQLdb
+class Ui_emptb(object):
+    def __init__(self):
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, MainWindow):
+        
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(672, 438)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(0, 0, 671, 401))
+        self.tableWidget.setRowCount(14)
+        self.tableWidget.setColumnCount(14)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        self.crr.execute("select * from emp")
+        res = self.crr.fetchall()
+        self.tableWidget.setRowCount(0)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number,column_number,QtWidgets.QTableWidgetItem(str(data)))
+
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 672, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "MONTHLY BILL"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "PRODUCT NAME"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "PRODUCT QUANTITY"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "PRODUCT PRICE"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "BILL AMOUNT"))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", " "))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", " "))
+
+
+class pur1(object):
+    def addfun(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=add()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def updt(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=update()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def dlt(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=delete()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def searchfun(self):
+        self.window=QtWidgets.QMainWindow()
+        self.ui=search()
+        self.ui.setupUi(self.window)
+        self.window.show()
+    def setupUi(self, WizardPage):
+        WizardPage.setObjectName("WizardPage")
+        WizardPage.resize(800, 578)
+        WizardPage.setStyleSheet("")
+        self.label = QtWidgets.QLabel(WizardPage)
+        self.label.setGeometry(QtCore.QRect(230, 90, 361, 421))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("Capture.PNG"))
+        self.label.setObjectName("label")
+        self.groupBox = QtWidgets.QGroupBox(WizardPage)
+        self.groupBox.setGeometry(QtCore.QRect(240, 420, 351, 51))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.shbut = QtWidgets.QPushButton(self.groupBox)
+        self.shbut.setGeometry(QtCore.QRect(10, 10, 81, 31))
+        self.shbut.clicked.connect(self.searchfun)
+        self.shbut.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(85, 170, 255);")
+        self.shbut.setObjectName("shbut")
+        self.addbut = QtWidgets.QPushButton(self.groupBox)
+        self.addbut.clicked.connect(self.addfun)
+        self.addbut.setGeometry(QtCore.QRect(100, 10, 75, 31))
+        self.addbut.setStyleSheet("background-color: rgb(85, 170, 255);font: 10pt \"MS Shell Dlg 2\";")
+        self.addbut.setObjectName("addbut")
+        self.updrbut = QtWidgets.QPushButton(self.groupBox)
+        self.updrbut.setGeometry(QtCore.QRect(190, 10, 75, 31))
+        self.updrbut.clicked.connect(self.updt)
+        self.updrbut.setStyleSheet("background-color: rgb(85, 170, 255);font: 10pt \"MS Shell Dlg 2\";")
+        self.updrbut.setObjectName("updrbut")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(270, 10, 75, 31))
+        self.pushButton_3.setStyleSheet("background-color: rgb(85, 170, 255);font: 10pt \"MS Shell Dlg 2\";")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_3.clicked.connect(self.dlt)
+        self.label_2 = QtWidgets.QLabel(WizardPage)
+        self.label_2.setGeometry(QtCore.QRect(0, 0, 801, 111))
+        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_2.setText("")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(WizardPage)
+        self.label_3.setGeometry(QtCore.QRect(-4, 109, 241, 461))
+        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(WizardPage)
+        self.label_4.setGeometry(QtCore.QRect(586, 109, 241, 471))
+        self.label_4.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(WizardPage)
+        self.label_5.setGeometry(QtCore.QRect(150, 510, 481, 71))
+        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+
+        self.retranslateUi(WizardPage)
+        QtCore.QMetaObject.connectSlotsByName(WizardPage)
+
+    def retranslateUi(self, WizardPage):
+        _translate = QtCore.QCoreApplication.translate
+        WizardPage.setWindowTitle(_translate("WizardPage", "Main Page"))
+        self.shbut.setText(_translate("WizardPage", "SHOW"))
+        self.addbut.setText(_translate("WizardPage", "ADD"))
+        self.updrbut.setText(_translate("WizardPage", "UPDATE"))
+        self.pushButton_3.setText(_translate("WizardPage", "REMOVE"))
+
+        
+        
+class add(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(641, 603)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(0, 0, 661, 631))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("Capture3.PNG"))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(90, 20, 291, 51))
+        font = QtGui.QFont()
+        font.setFamily("Leelawadee UI")
+        font.setPointSize(26)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(50, 190, 61, 31))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(50, 240, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(50, 280, 91, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_6.setFont(font)
+        self.label_6.setObjectName("label_6")
+        self.label_12 = QtWidgets.QLabel(self.centralwidget)
+        self.label_12.setGeometry(QtCore.QRect(380, 330, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_12.setFont(font)
+        self.label_12.setObjectName("label_12")
+        self.label_10 = QtWidgets.QLabel(self.centralwidget)
+        self.label_10.setGeometry(QtCore.QRect(440, 220, 81, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_10.setFont(font)
+        self.label_10.setObjectName("label_10")
+        self.label_13 = QtWidgets.QLabel(self.centralwidget)
+        self.label_13.setGeometry(QtCore.QRect(380, 380, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_13.setFont(font)
+        self.label_13.setObjectName("label_13")
+        self.label_15 = QtWidgets.QLabel(self.centralwidget)
+        self.label_15.setGeometry(QtCore.QRect(380, 460, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_15.setFont(font)
+        self.label_15.setObjectName("label_15")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(270, 530, 75, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.pushButton.setFont(font)
+        self.pushButton.setAutoDefault(True)
+        self.pushButton.setDefault(False)
+        self.pushButton.setFlat(False)
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.submit)
+        self.label_11 = QtWidgets.QLabel(self.centralwidget)
+        self.label_11.setGeometry(QtCore.QRect(380, 280, 71, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_11.setFont(font)
+        self.label_11.setObjectName("label_11")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(50, 150, 91, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(380, 150, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.label_9.setFont(font)
+        self.label_9.setObjectName("label_9")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(50, 100, 101, 31))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_7.setFont(font)
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(370, 110, 71, 16))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("font: 75 10pt \"MS Shell Dlg 2\";")
+        self.label_8.setObjectName("label_8")
+        self.label_14 = QtWidgets.QLabel(self.centralwidget)
+        self.label_14.setGeometry(QtCore.QRect(440, 50, 71, 21))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_14.setFont(font)
+        self.label_14.setObjectName("label_14")
+        self.label_16 = QtWidgets.QLabel(self.centralwidget)
+        self.label_16.setGeometry(QtCore.QRect(440, 420, 71, 21))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_16.setFont(font)
+        self.label_16.setObjectName("label_16")
+        self.CnameEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.CnameEn.setGeometry(QtCore.QRect(180, 110, 131, 20))
+        self.CnameEn.setObjectName("CnameEn")
+        self.PnameEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.PnameEn.setGeometry(QtCore.QRect(180, 150, 131, 20))
+        self.PnameEn.setObjectName("PnameEn")
+        self.QuanEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.QuanEn.setGeometry(QtCore.QRect(180, 200, 131, 20))
+        self.QuanEn.setObjectName("QuanEn")
+        self.DateEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.DateEn.setGeometry(QtCore.QRect(180, 240, 131, 20))
+        self.DateEn.setObjectName("DateEn")
+        self.TotAmEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.TotAmEn.setGeometry(QtCore.QRect(180, 280, 131, 20))
+        self.TotAmEn.setObjectName("TotAmEn")
+        self.CdateEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.CdateEn.setGeometry(QtCore.QRect(450, 110, 121, 20))
+        self.CdateEn.setObjectName("CdateEn")
+        self.CAmoEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.CAmoEn.setGeometry(QtCore.QRect(450, 150, 121, 20))
+        self.CAmoEn.setObjectName("CAmoEn")
+        self.BnameEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.BnameEn.setGeometry(QtCore.QRect(460, 280, 121, 20))
+        self.BnameEn.setObjectName("BnameEn")
+        self.CheDateEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.CheDateEn.setGeometry(QtCore.QRect(460, 330, 121, 20))
+        self.CheDateEn.setObjectName("CheDateEn")
+        self.CheAmoEn = QtWidgets.QLineEdit(self.centralwidget)
+        self.CheAmoEn.setGeometry(QtCore.QRect(460, 380, 121, 20))
+        self.CheAmoEn.setObjectName("CheAmoEn")
+        self.lineEdit_11 = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_11.setGeometry(QtCore.QRect(460, 460, 121, 20))
+        self.lineEdit_11.setObjectName("lineEdit_11")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+    def submit(self):
+        import MySQLdb
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        cursor.execute("""create table if not exists purchase(purchase_ID INT AUTO_INCREMENT PRIMARY KEY,
+               Company_Name VARCHAR(20) not null,
+               Product_Name VARCHAR(20) not null,
+               Quantity INT NOT NULL,
+               Date text not null,
+               Total_Amount int not null)""")
+        sql="INSERT INTO purchase(Company_Name,Product_Name,Quantity,Date,Total_Amount ) VALUES('"+self.CnameEn.text() + "','"+self.PnameEn.text()+"','"+self.QuanEn.text()+"','"+self.DateEn.text()+"','"+self.TotAmEn.text()+"')"
+        try:
+            cursor.execute(sql)
+            db.commit()
+            print('done')
+            self.successful()
+        except:
+            db.rollback()
+            print('Error in insert line 74')
+        cursor.execute("""create table if not exists method(method_ID INT AUTO_INCREMENT PRIMARY KEY,
+               FOREIGN KEY (method_ID)
+               REFERENCES purchase(purchase_ID),
+               credit_date text,
+               credit_amount text,
+               cheque_date text,
+               bank_name text,
+               amount text,
+               cash text)""")
+
+        sql2="INSERT INTO METHOD(credit_date,credit_amount,cheque_date,bank_name,amount,cash)VALUES('"+self.CdateEn.text()+"','"+self.CAmoEn.text()+"','"+self.CheDateEn.text()+"','"+self.BnameEn.text()+"','"+self.CheAmoEn.text()+"','"+self.lineEdit_11.text()+"')"
+        try:
+            cursor.execute(sql2)
+            db.commit()
+            print('done METHOD')
+        except:
+            db.rollback()
+            print('ErroR in method')
+            db.close()
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Submition"))
+        self.label_2.setText(_translate("MainWindow", "PURCHASE FORM"))
+        self.label_4.setText(_translate("MainWindow", "Quantity"))
+        self.label_5.setText(_translate("MainWindow", "Date"))
+        self.label_6.setText(_translate("MainWindow", "Total Amount"))
+        self.label_12.setText(_translate("MainWindow", "Date"))
+        self.label_10.setText(_translate("MainWindow", "Cheque"))
+        self.label_13.setText(_translate("MainWindow", "Amount"))
+        self.label_15.setText(_translate("MainWindow", "Amount"))
+        self.pushButton.setText(_translate("MainWindow", "Submit"))
+        self.label_11.setText(_translate("MainWindow", "Bank Name"))
+        self.label_3.setText(_translate("MainWindow", "Product Name"))
+        self.label_9.setText(_translate("MainWindow", "Amount"))
+        self.label_7.setText(_translate("MainWindow", "Company Name"))
+        self.label_8.setText(_translate("MainWindow", "Credit Date"))
+        self.label_14.setText(_translate("MainWindow", "Credit"))
+        self.label_16.setText(_translate("MainWindow", "Cash"))
+
+class update:
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(604, 298)
+        self.setcombx = QtWidgets.QComboBox(Dialog)
+        self.setcombx.setGeometry(QtCore.QRect(40, 100, 131, 21))
+        self.setcombx.setObjectName("setcombx")
+        list=['Company_Name','Product_Name','Quantity','Date','Total_Amount']
+        for i in list:
+            self.setcombx.addItem(i)
+        self.wherecom = QtWidgets.QComboBox(Dialog)
+        self.wherecom.setGeometry(QtCore.QRect(390, 100, 141, 21))
+        self.wherecom.setObjectName("wherecom")
+        list1=['purchase_ID','Company_Name','Product_Name','Quantity','Date','Total_Amount']
+        for i in list1:
+            self.wherecom.addItem(i)
+        self.setlb = QtWidgets.QLabel(Dialog)
+        self.setlb.setGeometry(QtCore.QRect(90, 80, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.setlb.setFont(font)
+        self.setlb.setObjectName("setlb")
+        self.wherelb = QtWidgets.QLabel(Dialog)
+        self.wherelb.setGeometry(QtCore.QRect(440, 80, 47, 13))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.wherelb.setFont(font)
+        self.wherelb.setObjectName("wherelb")
+        self.uplb = QtWidgets.QLabel(Dialog)
+        self.uplb.setGeometry(QtCore.QRect(220, 10, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.uplb.setFont(font)
+        self.uplb.setObjectName("uplb")
+        self.upbut = QtWidgets.QPushButton(Dialog)
+        self.upbut.setGeometry(QtCore.QRect(150, 240, 75, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.upbut.setFont(font)
+        self.upbut.setObjectName("upbut")
+        self.upbut.clicked.connect(self.update)
+        self.canbut_2 = QtWidgets.QPushButton(Dialog)
+        self.canbut_2.setGeometry(QtCore.QRect(290, 240, 75, 23))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.canbut_2.setFont(font)
+        self.canbut_2.setObjectName("canbut_2")
+        self.seten = QtWidgets.QLineEdit(Dialog)
+        self.seten.setGeometry(QtCore.QRect(40, 130, 131, 20))
+        self.seten.setObjectName("seten")
+        self.ehereen = QtWidgets.QLineEdit(Dialog)
+        self.ehereen.setGeometry(QtCore.QRect(390, 130, 141, 20))
+        self.ehereen.setObjectName("ehereen")
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.setlb.setText(_translate("Dialog", "SET"))
+        self.wherelb.setText(_translate("Dialog", "WHERE"))
+        self.uplb.setText(_translate("Dialog", "UPDATE FORM"))
+        self.upbut.setText(_translate("Dialog", "UPDATE"))
+        self.canbut_2.setText(_translate("Dialog", "CANCEL"))
+    
+    def update(self):
+        import MySQLdb
+        
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx = self.setcombx.currentText()
+        wherebx = self.wherecom.currentText()
+        setentry=self.seten.text()
+        whereentry=self.ehereen.text()
+        qu="update purchase set %s='%s' where %s='%s'"%(setbx,setentry,wherebx,whereentry)
+            
+        try:
+            cursor.execute(qu)
+            db.commit()
+            print('done UPDATE')
+        except:
+            db.rollback()
+            print('ErroR in update')
+            db.close()
+
+class delete(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-200, -60, 1401, 771))
+        self.frame.setStyleSheet("background-color:rgb(189, 189, 0)")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(390, 130, 241, 31))
+        self.label_2.setStyleSheet("font: 24pt \"MS Shell Dlg 2\";\n"
+"font: 28pt \"MS Shell Dlg 2\";")
+        self.label_2.setObjectName("label_2")
+        
+        
+        
+        self.comboBox = QtWidgets.QComboBox(self.frame)
+        self.comboBox.setGeometry(QtCore.QRect(350, 240, 201, 31))
+        self.comboBox.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"")
+        self.comboBox.setObjectName("comboBox")
+        list=['credit_date','credit_amount','cheque_date','bank_name','amount','cash']
+        for i in list:
+            self.comboBox.addItem(i)
+        
+        self.lineEdit = QtWidgets.QLineEdit(self.frame)
+        self.lineEdit.setGeometry(QtCore.QRect(350, 300, 211, 20))
+        self.lineEdit.setStyleSheet("QLineEdit{background-color:rgb(255, 255, 255)}")
+        self.lineEdit.setObjectName("lineEdit")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(250, 300, 91, 16))
+        self.label.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
+"font: 12pt \"MS Shell Dlg 2\";")
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.frame)
+        self.pushButton.setGeometry(QtCore.QRect(440, 440, 91, 31))
+        
+        self.pushButton.clicked.connect(self.delete)
+        
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    font: 14pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(170, 170, 255)}")
+        self.pushButton.setObjectName("pushButton")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+    def delete(self):
+        import MySQLdb
+        
+        db=MySQLdb.connect("localhost","root","fabeha123","project")
+        cursor=db.cursor()
+        setbx=self.comboBox.currentText()
+        seten=self.lineEdit.text()
+        qu="DELETE FROM method where %s='%s'"%(setbx,seten)
+        try:
+            cursor.execute(qu)
+            db.commit()
+            print('done Delete')
+        except:
+            db.rollback()
+            print('ErroR in Delete')
+        db.close()
+        
+        
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setAccessibleName(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:22pt; font-weight:600; text-decoration: underline;\">DELETE FORM</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "DELETE FORM"))
+        self.label.setText(_translate("MainWindow", "WHERE"))
+        self.pushButton.setText(_translate("MainWindow", "DELETE"))
+
+
+        
+    
+
+class search(object):
+    def __init__(self):
+        self.db = MySQLdb.connect("localhost","root","fabeha123","project")
+        self.crr = self.db.cursor()
+    def setupUi(self, MainWindow):
+        
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(672, 438)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(0, 0, 671, 401))
+        self.tableWidget.setRowCount(14)
+        self.tableWidget.setColumnCount(14)
+        self.tableWidget.setObjectName("tableWidget")
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(8, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(9, item)
+        self.crr.execute("select * from purchase , method")
+        res = self.crr.fetchall()
+        self.tableWidget.setRowCount(0)
+        for row_number, row_data in enumerate(res):
+            self.tableWidget.insertRow(row_number)
+            for column_number, data in enumerate(row_data):
+                self.tableWidget.setItem(row_number,column_number,QtWidgets.QTableWidgetItem(str(data)))
+
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 672, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "COMPANY NAME"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "PRODUCT NAME"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "PRODUCT QUANTITY"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "DATE"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "TOTAL AMOUNT"))
+        item = self.tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "CREDIT DATE"))
+        item = self.tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "BANK NAME "))
+        item = self.tableWidget.horizontalHeaderItem(7)
+        item.setText(_translate("MainWindow", "DATE "))
+        item = self.tableWidget.horizontalHeaderItem(8)
+        item.setText(_translate("MainWindow", "AMOUNT"))
+        item = self.tableWidget.horizontalHeaderItem(9)
+        item.setText(_translate("MainWindow", "SUB AMOUNT"))
+        
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_logic()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
+
